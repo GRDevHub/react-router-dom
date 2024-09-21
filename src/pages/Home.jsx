@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import NavBar from '../Components/NavBar'
 
-const Home = (props) => {
+const Home = () => {
     return (
-        <div>
-            <h1>HOME</h1>
-        </div>
+        <>
+            <NavBar />
+            <div className='container'>
+                <h1 className='text-primary mt-3'>HOME</h1>
+            </div>
+        </>
     )
 }
 
