@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <h1>REACT ROUTER DOM</h1>
+      <h1 className="text-primary">REACT ROUTER DOM</h1>
     </>
   )
 }
