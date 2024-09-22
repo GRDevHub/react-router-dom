@@ -7,7 +7,7 @@ const Blog = () => {
     const { personajes } = useLoaderData();
     // console.log(personajes);
     return (
-        <div>
+        <div >
             <div className='container'>
                 <h1 className='text-primary mt-3'>Blog</h1>
                 <CardsComponents personajes={ personajes } />

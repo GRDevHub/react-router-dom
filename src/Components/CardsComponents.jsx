@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
 import Card from './Card';
+import { Link } from 'react-router-dom';
 
 const CardsComponents = ({ personajes }) => {
     return (
-        <div className='mt-4 row row-cols-1 row-cols-md-3 g-4 border'>
+        <div className='mt-4 row row-cols-1 row-cols-md-3 g-4 border justify-content-center'>
             { personajes.length == 0
                 ? <h1 className='text-primary'>Loading...</h1>     
                 : personajes.map( item => (
-                    <Card key={ item.id } personaje={ item } />
+                    <Link key={ item.id } to={`/blog/${item.id}`}>
+                        <Card personaje={ item } />
+                    </Link>
                 ))
             }
         </div>

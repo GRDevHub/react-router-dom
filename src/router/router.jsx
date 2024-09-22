@@ -5,6 +5,8 @@ import Home from "../pages/Home";
 import Blog from "../pages/Blog";
 import About from "../pages/About";
 import { obtenerPersonajes } from "../api/obtenerPersonajes";
+import Personaje from "../pages/Personaje";
+import { personIndividual } from "../api/personIndividual";
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +26,11 @@ export const router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />
+            },
+            {
+                path: '/blog/:id',
+                element: <Personaje />,
+                loader: personIndividual,
             },
         ]
     },

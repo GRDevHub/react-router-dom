@@ -2,10 +2,12 @@ import PropTypes from 'prop-types'
 
 const Card = ({ personaje }) => {
     const { image, name, status } = personaje;
-    
+    const tamaño = {
+        width: '300px',
+    }
     return (
-        <div className="col">
-            <div className="card">
+        <div className="col-4">
+            <div className="card" style={ tamaño }>
                 <img src={ image } className="card-img-top" alt={ name } />
                 <div className="card-body">
                     <h5 className="card-title">{ name }</h5>
