@@ -1,5 +1,4 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const Error404 = () => {
     return (
@@ -12,8 +11,8 @@ const Error404 = () => {
     )
 }
 
-Error404.propTypes = {
+// Error404.propTypes = {
 
-}
+// }
 
 export default Error404

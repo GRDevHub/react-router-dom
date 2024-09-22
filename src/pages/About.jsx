@@ -1,6 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import NavBar from '../Components/NavBar';
+// import PropTypes from 'prop-types';
+// import NavBar from '../Components/NavBar';
 
 const About = () => {
     return (
@@ -12,8 +11,8 @@ const About = () => {
     )
 }
 
-About.propTypes = {
+// About.propTypes = {
 
-}
+// }
 
 export default About;

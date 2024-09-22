@@ -4,6 +4,7 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Blog from "../pages/Blog";
 import About from "../pages/About";
+import { obtenerPersonajes } from "../api/obtenerPersonajes";
 
 export const router = createBrowserRouter([
     {
@@ -17,7 +18,8 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/blog',
-                element: <Blog />
+                element: <Blog />,
+                loader: obtenerPersonajes,
             },
             {
                 path: '/about',

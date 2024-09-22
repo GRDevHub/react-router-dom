@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import NavBar from '../Components/NavBar';
 import { Outlet } from 'react-router-dom';
 
-const Layout = props => {
+const Layout = () => {
     return (
         <div>
             {/* Navbar */}
@@ -16,8 +15,8 @@ const Layout = props => {
     )
 }
 
-Layout.propTypes = {
+// Layout.propTypes = {
 
-}
+// }
 
 export default Layout;
