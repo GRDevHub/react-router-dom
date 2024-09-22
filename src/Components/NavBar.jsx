@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
 const NavBar = () => {
@@ -13,8 +12,5 @@ const NavBar = () => {
     )
 }
 
-// NavBar.propTypes = {
-
-// }
 
 export default NavBar;

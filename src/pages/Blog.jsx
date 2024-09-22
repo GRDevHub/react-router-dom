@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-// import NavBar from '../Components/NavBar';
 import { useLoaderData } from 'react-router-dom';
 import CardsComponents from '../Components/CardsComponents';
 
@@ -15,9 +13,5 @@ const Blog = () => {
         </div>
     )
 }
-
-// Blog.propTypes = {
-
-// }
 
 export default Blog;
